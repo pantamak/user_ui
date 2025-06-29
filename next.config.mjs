@@ -6,8 +6,6 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  distDir: "build"
-  , // Custom output directory for Vercel deployment
   images: {
     remotePatterns: [
       {
