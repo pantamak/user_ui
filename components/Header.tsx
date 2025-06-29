@@ -98,24 +98,9 @@ export function Header({
               </Button>
             </div>
 
-            <Button
-              variant="ghost"
-              size="icon"
-              className="relative text-white hover:bg-white/20 border-white/30 transition-all duration-200"
-            >
-              <Bell className="h-4 w-4" />
-              <Badge className="absolute -top-1 -right-1 h-5 w-5 rounded-full p-0 text-xs bg-red-500 text-white border-2 border-white/20">
-                3
-              </Badge>
-            </Button>
 
-            <Button
-              variant="ghost"
-              size="icon"
-              className="text-white hover:bg-white/20 border-white/30 transition-all duration-200"
-            >
-              <User className="h-4 w-4" />
-            </Button>
+
+
 
             <Button
               variant="ghost"
