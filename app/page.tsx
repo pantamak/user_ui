@@ -111,6 +111,20 @@ export default function PantamakBrowser() {
   const products: Product[] = productsData?.products || []
   const totalPages = productsData?.pagination?.pages || 1
 
+//   // Debug logging
+//   console.log('=== DEBUG INFO ===')
+//   console.log('productsData:', productsData)
+//   console.log('products:', products)
+//   console.log('products.length:', products.length)
+//   console.log('productsLoading:', productsLoading)
+//   console.log('productsError:', productsError)
+//   console.log('totalPages:', totalPages)
+//   if (products.length > 0) {
+//     console.log('First product:', products[0])
+//     console.log('First product image URL:', products[0].featured_image_url)
+//   }
+//   console.log('==================')
+
   // Update active filters when filters change
   useEffect(() => {
     const filters: string[] = []

@@ -6,9 +6,28 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  distDir: "build"
+  , // Custom output directory for Vercel deployment
   images: {
-    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
+      {
+        protocol: "http",
+        hostname: "shop.pantamak.com",
+      },
+      {
+        protocol: "https",
+        hostname: "shop.pantamak.com",
+      },
+    ],
+    unoptimized: true, // Disable image optimization to prevent timeouts
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'attachment',
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;

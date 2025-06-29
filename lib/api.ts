@@ -258,7 +258,7 @@ export class PantamakAPI {
       }
     });
 
-    return apiRequest<PaginatedResponse<Product>>(`/products?${searchParams.toString()}`);
+    return apiRequest<PaginatedResponse<Product>>(`/products`);
   }
 
   static async getProduct(productId: number): Promise<Product> {
